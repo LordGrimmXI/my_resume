@@ -1,65 +1,36 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
-        }else{
-            $('.navbar').removeClass("sticky");
-        }
-        
-        if(this.scrollY > 500){
-            $('.scroll-up-btn').addClass("show");
-        }else{
-            $('.scroll-up-btn').removeClass("show");
-        }
-    });
+const header = document.querySelector(".site-header");
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
 
-    $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
-        $('html').css("scrollBehavior", "auto");
-    });
+window.addEventListener("scroll", () => {
+  header.classList.toggle("scrolled", window.scrollY > 12);
+}, { passive: true });
 
-    $('.navbar .menu li a').click(function(){
-        $('html').css("scrollBehavior", "smooth");
-    });
+menuToggle?.addEventListener("click", () => {
+  const open = navMenu.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(open));
+});
 
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    });
+navMenu?.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("open");
+    menuToggle?.setAttribute("aria-expanded", "false");
+  });
+});
 
-    var typed = new Typed(".typing", {
-        strings: ["Developer", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+const revealItems = document.querySelectorAll(
+  ".section, .timeline-item, .project-card, .credential-grid article"
+);
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Developer", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add("is-visible");
+    obs.unobserve(entry.target);
+  });
+}, { threshold: 0.08 });
 
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplay: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
-        }
-    });
+revealItems.forEach(item => {
+  item.classList.add("reveal");
+  observer.observe(item);
 });

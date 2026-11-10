@@ -1,240 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sushant Shubham — Backend & AI Engineer building production APIs, distributed workflows, and AI-enabled backend systems.">
+  <meta name="theme-color" content="#080b10">
+  <meta property="og:title" content="Sushant Shubham — Backend & AI Engineer">
+  <meta property="og:description" content="Java backend engineering, AI-enabled systems, cloud integrations, and production architecture.">
+  <title>Sushant Shubham — Backend & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a>Portfo<span>lio.</span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#projects" class="menu-btn">Projects</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Sushant Shubham home">
+        <span class="brand-mark">SS</span>
+        <span class="brand-text">
+          <strong>Sushant Shubham</strong>
+          <small>BACKEND & AI ENGINEER</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Stack</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="https://github.com/LordGrimmXI" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
     </nav>
+  </header>
 
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Sushant Shubham</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="#contact">Hire Me</a>
-            </div>
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <div class="status-pill"><span></span> Building production systems</div>
+        <p class="eyebrow">JAVA · SPRING BOOT · AI · CLOUD</p>
+        <h1>I build backend systems that are <em>reliable by design.</em></h1>
+        <p class="hero-lead">
+          Java Backend Engineer and Backend Technical Lead focused on REST APIs,
+          asynchronous processing, cloud integrations, AI-enabled workflows, and
+          production architecture.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↓</span></a>
+          <a class="button button-ghost" href="#contact">Let's talk <span>↗</span></a>
         </div>
+
+        <div class="social-row" aria-label="Professional profiles">
+          <a href="https://www.linkedin.com/in/sushant-shubham-4b24aa164/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/LordGrimmXI" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://leetcode.com/LordGrimmXI/" target="_blank" rel="noopener">LeetCode ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="grid-glow" aria-hidden="true"></div>
+        <div class="portrait-wrap">
+          <div class="portrait-ring"></div>
+          <img src="Images/IMG_20220429_211326.jpg" alt="Portrait of Sushant Shubham">
+        </div>
+
+        <div class="floating-card role-card">
+          <span class="card-label">CURRENT ROLE</span>
+          <strong>Software Engineer</strong>
+          <small>Grafyn AI · Remote</small>
+        </div>
+
+        <div class="floating-card code-card">
+          <span>system.status</span>
+          <strong>production_ready<span>_</span></strong>
+          <small>architecture → implementation → deployment</small>
+        </div>
+      </div>
+
+      <div class="hero-metrics">
+        <div><strong>5</strong><span>developers led</span></div>
+        <div><strong>75%</strong><span>query performance gain</span></div>
+        <div><strong>3</strong><span>customers onboarded</span></div>
+        <div><strong>1100+</strong><span>day LeetCode streak</span></div>
+      </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="Images/IMG_20220429_211326.jpg" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Sushant and I'm a <span class="typing-2"></span></div>
-                    <p>I'm an Engineering student currently pursuing my degree in Computer Science with a passion for Cloud Technologies. Aspiring to become an AWS Cloud Developer, I'm driven by innovation and scalable cloud solutions.</p>
-                    <a href="https://drive.google.com/file/d/1WoCzxVVpOeo3iXbHUufk4qT2PBRFlMUK/view?usp=sharing" download="Sushant_CV.pdf">Download CV</a>
-
-                </div>
-            </div>
+    <section class="section container" id="about">
+      <div class="section-kicker">01 / ABOUT</div>
+      <div class="about-grid">
+        <div>
+          <p class="eyebrow">ENGINEERING WITH INTENT</p>
+          <h2>From API design to deployment, I care about the whole system.</h2>
         </div>
+        <div class="about-copy">
+          <p>
+            I work primarily on backend systems where reliability, integrations,
+            data flow, and operational behavior matter. My current work spans Java,
+            Spring Boot, Python automation, cloud infrastructure, AI evaluation,
+            search/retrieval systems, and technical leadership.
+          </p>
+          <p>
+            I enjoy understanding why a system behaves the way it does—not just
+            making an endpoint work. That means thinking about failure recovery,
+            concurrency, validation, observability, deployment, and maintainability.
+          </p>
+          <div class="about-tags">
+            <span>Backend Architecture</span>
+            <span>API Design</span>
+            <span>AI Engineering</span>
+            <span>Cloud Integrations</span>
+            <span>Distributed Workflows</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="projects" id="projects">
-        <div class="max-width">
-            <h2 class="title">My Projects</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Sorting Visualizer</div>
-                        <p>A sorting visualizer web app to give a visual understanding of sorting techniques.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">Data Visualization using AWS Quicksight</div>
-                        <p>Created Data Visualizations using Amazon S3 and Amazon Quicksight, working with a large dataset of
-                            best-selling Amazon Products</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Reci-Pie</div>
-                        <p>Designed the User Interface for a personal food app project.</p>
-                    </div>
-                </div>
-               </div>
+    <section class="section container" id="experience">
+      <div class="section-kicker">02 / EXPERIENCE</div>
+      <div class="section-heading">
+        <p class="eyebrow">PROFESSIONAL EXPERIENCE</p>
+        <h2>Building, shipping, and leading.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item featured">
+          <div class="timeline-date">MAY 2025 — PRESENT</div>
+          <div class="timeline-content">
+            <div class="company-line">
+              <h3>Software Engineer</h3>
+              <span>Grafyn AI · Remote</span>
             </div>
-        </div>
+            <ul>
+              <li>Designed and maintained production REST APIs in Java with validation, pagination, API versioning, standardized errors, and stateless multi-customer processing.</li>
+              <li>Implemented asynchronous and multithreaded processing for long-running external API calls to keep request threads non-blocking.</li>
+              <li>Optimized MySQL queries by approximately 75% and integrated Snowflake and Databricks Query APIs into application workflows.</li>
+              <li>Integrated Pinecone and OpenSearch-backed APIs for AI-driven search and retrieval capabilities.</li>
+              <li>Built Python automation for Agent Red Teaming and SDD workflows, including execution, result generation, cloud storage, and retrieval.</li>
+              <li>Led a 5-developer backend team, supported onboarding of 3 customers, and served as technical point of contact for ISO 27001 readiness.</li>
+            </ul>
+            <div class="tech-row">
+              <span>Java</span><span>Spring Boot</span><span>Python</span><span>AWS</span><span>Azure</span><span>MySQL</span><span>Kubernetes</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">MAY 2024 — OCT 2024</div>
+          <div class="timeline-content">
+            <div class="company-line">
+              <h3>Application Developer</h3>
+              <span>GR8 Designs · Jamshedpur, Jharkhand</span>
+            </div>
+            <ul>
+              <li>Developed mobile applications using React Native, reusable components, application flows, forms, state management, and API integrations.</li>
+              <li>Handled asynchronous requests, loading/error states, response validation, and dynamic data rendering.</li>
+              <li>Contributed to Node.js backend endpoints, business logic, database interactions, debugging, testing, code reviews, and release workflows.</li>
+            </ul>
+            <div class="tech-row">
+              <span>React Native</span><span>Node.js</span><span>REST APIs</span><span>JavaScript</span><span>Git</span>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>Armed with extensive coding expertise across major programming languages, I possess a deep-rooted understanding of DevOps and AWS cloud solutions. My passion gravitates towards AWS, where I envision harnessing its transformative capabilities to drive innovation. Committed to advancing in this realm, I'm poised to propel AWS-driven solutions for tomorrow's challenges.</p>
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line html"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line js"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>AWS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line aws"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MySQL</span>
-                            <span>65%</span>
-                        </div>
-                        <div class="line mysql"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>C/C++</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line cpp"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Java</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="line java"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Bash</span>
-                            <span>45%</span>
-                        </div>
-                        <div class="line bash"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>DevOps</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line devops"></div>
-                    </div>
-                </div>
-            </div>
+    <section class="section container" id="projects">
+      <div class="section-kicker">03 / SELECTED WORK</div>
+      <div class="projects-head">
+        <div>
+          <p class="eyebrow">PROJECTS</p>
+          <h2>Things I build to understand systems deeply.</h2>
         </div>
+        <a class="text-link" href="https://github.com/LordGrimmXI" target="_blank" rel="noopener">View GitHub ↗</a>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-number">01</div>
+          <div class="project-icon">↯</div>
+          <p class="project-type">BACKEND SYSTEM · IN PROGRESS</p>
+          <h3>Relay</h3>
+          <p>Reliable webhook delivery system built around persistent event storage, scheduled delivery, REST APIs, and failure recovery.</p>
+          <div class="tech-row"><span>Java 21</span><span>Spring Boot</span><span>PostgreSQL</span><span>JDBC</span><span>Docker</span></div>
+          <div class="project-footer"><span>Reliability · Recovery · Concurrency</span><a href="https://github.com/LordGrimmXI" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div class="project-icon">▦</div>
+          <p class="project-type">SYSTEMS · C++</p>
+          <h3>CHIP-8 Emulator</h3>
+          <p>Implemented the fetch-decode-execute cycle, CPU registers, memory, stack, timers, keypad, graphics, and 34 of 35 standard opcodes.</p>
+          <div class="tech-row"><span>C++17</span><span>SDL2</span><span>Architecture</span></div>
+          <div class="project-footer"><span>34 / 35 opcodes</span><a href="https://github.com/LordGrimmXI" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div class="project-icon">⌘</div>
+          <p class="project-type">BACKEND · DATABASE</p>
+          <h3>MySQL Database Crawler</h3>
+          <p>Spring Boot application that inspects schemas, tables, relationships, and indexes, then generates JPA-annotated model classes.</p>
+          <div class="tech-row"><span>Java</span><span>Spring Boot</span><span>JDBC</span><span>MySQL</span></div>
+          <div class="project-footer"><span>Schema introspection · Code generation</span><a href="https://github.com/LordGrimmXI" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </article>
+      </div>
     </section>
 
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p>Reach out to connect, discuss, or collaborate. I'm always eager to engage and explore new opportunities. Let's chat!</p>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Sushant Shubham</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Bhubaneshwar, India</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">sushantsubham1702@gmail.com</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="https://formspree.io/f/mqkvgqdg" method="post">
-                        <div class="fields">
-                            <div class="field email">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>                    
-                </div>
-                <div class="icon-container">
-                    <a href="https://www.linkedin.com/in/sushant-shubham-4b24aa164/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                    </a>
-                    <a href="https://leetcode.com/LordGrimmXI/" target="_blank" rel="noopener noreferrer">
-                        <img src="./Images/leetcode.png" alt="LeetCode" width="32" height="32"/>
-                    </a>
-                    <a href="https://github.com/LordGrimmXI" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github fa-2x"></i>
-                    </a>
-                </div>
-            </div>
+    <section class="section container" id="skills">
+      <div class="section-kicker">04 / STACK</div>
+      <div class="skills-layout">
+        <div>
+          <p class="eyebrow">TECHNICAL TOOLKIT</p>
+          <h2>A stack centered around backend engineering.</h2>
+          <p class="muted">No arbitrary skill percentages. The goal is to show the technologies I actually use and work with.</p>
         </div>
+
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="skill-pills"><span>Java</span><span>Python</span><span>SQL</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <div class="skill-pills"><span>Spring Boot</span><span>REST APIs</span><span>HTTP</span><span>JDBC</span><span>Async Processing</span><span>Multithreading</span><span>API Validation</span><span>API Versioning</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>AI / ML</h3>
+            <div class="skill-pills"><span>AI API Integration</span><span>Agent Red Teaming</span><span>AI Evaluation</span><span>RAG Concepts</span><span>Vector Search</span><span>Prompt Engineering</span><span>Python Automation</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Data & Cloud</h3>
+            <div class="skill-pills"><span>PostgreSQL</span><span>MySQL</span><span>Snowflake</span><span>Databricks</span><span>Pinecone</span><span>OpenSearch</span><span>AWS S3</span><span>AWS Secrets Manager</span><span>Azure Key Vault</span><span>Azure Blob Storage</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Engineering</h3>
+            <div class="skill-pills"><span>Backend Architecture</span><span>API Design</span><span>Multi-Tenant Systems</span><span>Distributed Workflows</span><span>Kubernetes</span><span>GitLab CI/CD</span><span>Deployment Testing</span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <script src="script.js"></script>
+    <section class="section container credentials">
+      <div class="section-kicker">05 / CREDENTIALS</div>
+      <div class="credential-grid">
+        <article>
+          <span class="credential-label">EDUCATION</span>
+          <h3>B.Tech, Computer Science</h3>
+          <p>Kalinga Institute of Industrial Technology</p>
+          <strong>GPA 8.51 · 2021 — 2025</strong>
+        </article>
+        <article>
+          <span class="credential-label">LEETCODE</span>
+          <h3>Top 8.5%</h3>
+          <p>Maximum rating of 1744</p>
+          <strong>1100+ day streak</strong>
+        </article>
+        <article>
+          <span class="credential-label">CERTIFICATION</span>
+          <h3>IBM Full Stack Developer</h3>
+          <p>Completed certification and developer assessment</p>
+          <strong>April 2023</strong>
+        </article>
+        <article>
+          <span class="credential-label">COMPETITION</span>
+          <h3>CodeChampions — 14th</h3>
+          <p>IET Ayodhya · 150+ participants</p>
+          <strong>September 2023</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <p class="eyebrow">06 / CONTACT</p>
+          <h2>Have a backend problem worth solving?</h2>
+          <p class="contact-lead">I'm open to engineering opportunities, technical conversations, and interesting systems problems.</p>
+          <a class="email-link" href="mailto:sushantsubham1702@gmail.com">sushantsubham1702@gmail.com ↗</a>
+          <div class="social-row contact-socials">
+            <a href="https://www.linkedin.com/in/sushant-shubham-4b24aa164/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://github.com/LordGrimmXI" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://leetcode.com/LordGrimmXI/" target="_blank" rel="noopener">LeetCode ↗</a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/mqkvgqdg" method="post">
+          <label>
+            <span>Your email</span>
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            <span>Subject</span>
+            <input type="text" name="subject" placeholder="Let's build something..." required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Tell me a little about it." required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Send message <span>↗</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© 2026 Sushant Shubham</span>
+    <span>Built with HTML · CSS · JavaScript</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
